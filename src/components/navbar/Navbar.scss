@@ -4,14 +4,15 @@
   align-items: center;
   background-color: #013914;
   color: white;
-  transition: .5s all ease;
+  transition: 0.5s all ease;
   position: sticky;
   top: 0;
+  z-index: 5;
 
   &.active {
     background-color: white;
     color: black;
-    overflow: hidden;
+    overflow: a;
   }
 
   .container {
@@ -24,7 +25,6 @@
       font-size: 34px;
       font-weight: bold;
       .text {
-
       }
 
       .dot {
@@ -78,18 +78,16 @@
         cursor: pointer;
         background-color: transparent;
 
-
         &:hover {
           background-color: #1dbf73;
           border-color: #1dbf73;
         }
-        
       }
     }
   }
 
   hr {
-    width: 100%;
+    width: calc(100% - 2px);
     height: 0;
     border: 0.5px solid lightgrey;
   }
