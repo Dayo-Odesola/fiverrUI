@@ -70,7 +70,7 @@ const App = () => {
           element: <Messages />
         },
         {
-          path: "/messages",
+          path: "/message/:id",
           element: <Message />
         },
       ]
